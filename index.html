@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solvera.id - Solusi Cerdas untuk Tugas Anda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Pengaturan Dasar & Warna */
+        :root {
+            --bg-color: #f4f7f9;,md
+            --font-color: #2c3e50;
+            --primary-color: #0A8DAB;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* CSS Header */
+        .header {
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 20px 30px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            gap: 20px; 
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .logo {
+            width: 70px; 
+            height: auto;
+        }
+
+        .header-text h1 {
+            margin: 0; 
+            font-size: 2.5em; 
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1; 
+        }
+
+        .header-text .slogan {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin: 2px 0 0 0;
+            padding: 0;
+        }
+        
+        .contact-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: var(--primary-color);
+            padding: 10px 25px;
+            border-radius: 50px;
+            margin-left: 10px; 
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            white-space: nowrap; 
+        }
+        .contact-buttons a:hover {
+            background-color: #086F8A;
+            transform: translateY(-2px);
+        }
+
+        /* SECTION TENTANG KAMI */
+        .about-us {
+            text-align: center;
+            padding: 20px 40px 40px 40px;
+            max-width: 700px;
+            margin: -10px auto 40px auto;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        .about-us p {
+            font-size: 1.1em;
+            color: #555;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        /* CSS Section Lainnya */
+        .section-title {
+            text-align: center;
+            font-size: 2.2em;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        @media (min-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } }
+        
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.4em;
+        }
+        .card p {
+            font-size: 1em;
+            color: #555;
+            flex-grow: 1;
+        }
+        .card .btn {
+            text-decoration: none;
+            color: var(--primary-color);
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .card .btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header-brand">
+                <img src="logo.png" alt="Logo Solvera.id" class="logo">
+                <div class="header-text">
+                    <h1>Solvera.id</h1>
+                    <p class="slogan">Solusi Cerdas untuk Tugas Anda</p>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <a href="mailto:andirezki238@gmail.com">Email</a>
+                <a href="https://wa.me/6281261002980" target="_blank">WhatsApp</a>
+            </div>
+        </header>
+
+        <section class="about-us">
+             <p>Membantu Anda dalam pengetikan dokumen Word, pengolahan data Excel, desain presentasi PowerPoint, hingga penyusunan program Python dasar.</p>
+        </section>
+
+        <section id="layanan">
+            <h2 class="section-title">Layanan Utama Kami</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Dokumen Word</h3>
+                    <p>Jasa pengetikan, formatting, dan penyusunan dokumen (makalah, laporan, dll) agar rapi dan profesional.</p>
+                    <a href="https://wa.me/6281261002980?text=Halo,%20saya%20tertarik%20dengan%20jasa%20dokumen%20Word." class="btn" target="_blank">Diskusi & Contoh</a>
+                </div>
+
+                <div class="card">
+                    <h3>Analisis Data Excel</h3>
+                    <p>Membantu dalam pengolahan data, pembuatan rumus, tabel pivot, dan visualisasi data dalam bentuk grafik informatif.</p>
+                    <a href="https://wa.me/6281261002980?text=Halo,%20saya%20tertarik%20dengan%20jasa%20analisis%20data%20Excel." class="btn" target="_blank">Diskusi & Contoh</a>
+                </div>
+
+                <div class="card">
+                    <h3>Program Python Dasar</h3>
+                    <p>Script Python yang dirancang dari logika dan arahan Anda. Saya menggunakan AI sebagai 'asisten' untuk mempercepat penulisan kode, namun hasil dan kualitasnya tetap divalidasi secara manual untuk menjamin ketepatan.</p>
+                    <a href="https://wa.me/6281261002980?text=Halo,%20saya%20tertarik%20dengan%20jasa%20program%20Python." class="btn" target="_blank">Diskusi & Contoh</a>
+                </div>
+
+                <div class="card">
+                    <h3>Presentasi PPT</h3>
+                    <p>Jasa pembuatan desain slide presentasi yang menarik, bersih, dan profesional untuk menunjang kebutuhan Anda.</p>
+                    <a href="https://wa.me/6281261002980?text=Halo,%20saya%20tertarik%20dengan%20jasa%20desain%20PPT." class="btn" target="_blank">Diskusi & Contoh</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 - Andi Rezki Afriza (Solvera.id)</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
